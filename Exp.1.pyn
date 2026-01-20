@@ -1,0 +1,7 @@
+name=input("enter your name\n")
+UIN=input("enter your UIN\n")
+marks=input("enter your marks\n")
+print("Hello!",name)
+print("My UIN is",UIN)
+print(f"I scored {marks} marks in 12th")
+	

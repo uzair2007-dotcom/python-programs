@@ -6,6 +6,6 @@ TA=0.3*BS
 print("The travel allowance is\n",TA)
 HRA=0.1*BS
 print("The house rent allowance is\n",HRA)
-Gross_salary=BS+DA+TA+HRA
+Gross_salary=BS+DS+TA+HRA
 print("The Gross salary is\n",Gross_salary)
        

@@ -1,4 +1,4 @@
-print("251A034,27/01/26/n")
+print("251A034,27/01/26\n")
 BS=int(input("enter your base salary\n"))
 DS=0.7*BS
 print("The dearness allowance is\n",DS)

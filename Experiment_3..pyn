@@ -1,0 +1,11 @@
+print("251A034,27/01/26/n")
+BS=int(input("enter your base salary\n"))
+DS=0.7*BS
+print("The dearness allowance is\n",DS)
+TA=0.3*BS
+print("The travel allowance is\n",TA)
+HRA=0.1*BS
+print("The house rent allowance is\n",HRA)
+Gross_salary=BS+DA+TA+HRA
+print("The Gross salary is\n",Gross_salary)
+       

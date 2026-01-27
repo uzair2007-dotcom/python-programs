@@ -1,0 +1,8 @@
+print("251A034,27/01/26/n")
+Principalamount=float(input("enter the Principal Amount(in Rupees)\n"))
+Rateofinterest=float(input("enter the Rate Of Interest(In perecnt)\n"))
+
+Timeperiod=int(input("Enter the time period(In years)\n"))
+SimpleInterest=(Principalamount+Rateofinterest+Timeperiod)/100
+print("The Simple Interest is/n",SimpleInterest)
+

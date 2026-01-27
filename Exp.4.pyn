@@ -1,4 +1,4 @@
-print("251A034,27/01/26/n")
+print("251A034,27/01/26\n")
 Principalamount=float(input("enter the Principal Amount(in Rupees)\n"))
 Rateofinterest=float(input("enter the Rate Of Interest(In perecnt)\n"))
 

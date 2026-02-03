@@ -1,0 +1,12 @@
+l=[]
+name=[]
+age=[]
+section=[]
+name.extend([input("enter your name:\n"),input("enter your Friends name\n")])
+
+age.extend([input("enter your age\n"),input("enter your friends age\n")])
+section.extend([input("enter your section\n"),input("Enter your friends section\n")])
+
+l.extend([(name[0],age[0],section[0]),(name[1],age[1],section[1])])
+
+print(l)

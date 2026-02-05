@@ -1,0 +1,19 @@
+# student enrollment manager
+print("251A034", "04|02|26\n")
+
+CET = {"251A034", "251A035", "251A036"}
+JEE = {'251A034', '251A050', '251A049', '251A060'}
+NEET = {'251A022', '251A024', '251A002'}
+
+print(CET | JEE | NEET)   # total students
+
+print("Total students appeared in the exams:", CET | JEE | NEET)   # total no. of students
+print("Total students appeared in all exams:", CET & JEE & NEET)
+print("Total students appeared only in cet and neet exams:", (CET & JEE) - NEET)
+print("Total students appeared only in cet and neet exams:", (CET | NEET) - JEE)
+
+print(CET | JEE)   # total students appeared in cet and jee
+print(CET & JEE)   # students appeared in both cet and jee
+
+print(CET - JEE)
+print((CET | JEE) - (CET & JEE))   # either cet or jee but not both

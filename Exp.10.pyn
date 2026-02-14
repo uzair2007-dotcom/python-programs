@@ -1,0 +1,22 @@
+print("251A034,10|02|26\n")
+def is_prime():
+    n = int(input("Enter the number: "))
+
+    if n <= 1:
+        print("Neither prime nor composite")
+        return
+
+    flag = False
+
+    for i in range(2, n):
+        if n % i == 0:
+            flag = True
+            break
+
+    if flag:
+        print("Not prime")
+    else:
+        print("Number is prime")
+
+
+is_prime()

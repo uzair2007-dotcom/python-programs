@@ -1,0 +1,5 @@
+print("251A034,10|02|26")
+L=int(input("Enter the No Of lines of the triangle\n"))
+for i in range(1,L+1):
+    print("*"*i)
+    

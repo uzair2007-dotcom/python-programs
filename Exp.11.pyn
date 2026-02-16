@@ -1,0 +1,63 @@
+print("251A034,16|02|26\n")
+print("Menu\n")
+print("1.Addition\n")
+print("2.Substraction\n")
+print("3.Multiplication\n")
+print("4.Modulus\n")
+print("5.Divition\n")
+
+def add(num1,num2):
+    sum=num1+num2
+    print("Addition=",sum)
+
+
+def sub(num1,num2):
+    minus=num1-num2
+    print("Subtraction=",minus)
+
+def mul(num1,num2):
+   mul=num1*num2
+   print("Multiplication=",mul)
+
+
+def Mod(num1,num2):
+    Mod=num1%num2 
+    print("Modulus=",Mod)
+
+
+def Div(num1,num2):
+    
+    if num2==0:
+        print("Cannot divide by 0")
+        return
+    else:
+     Remainder=num1/num2
+     print("Remainder=",Remainder)
+
+
+value1=int(input("Enter the 1st value\n"))
+value2=int(input("Enter the 2nd value\n"))
+choice=int(input("Enter your Choice\n"))
+
+
+if choice==1:
+
+ add(value1,value2)
+
+elif choice==2:
+  sub(value1,value2)
+
+elif choice==3:
+   mul(value1,value2)
+
+elif choice==4:
+   Mod(valu1,value2)
+
+
+elif choice==5:
+ Div(value1,value2)
+
+
+else:
+   print("Invalid choice\n") 
+

@@ -1,0 +1,17 @@
+print("251A034,17|02|26")
+try:
+  num1=int(input("enter the 1st number\n"))
+  num2=int(input("Enter the second number\n"))
+  result=num1/num2
+
+
+except ZeroDivisionError:
+     print("number cannot be divide by zero\n")
+
+except ValueError:
+    print("invalid Input")
+
+else:
+    print("Division",result)
+finally:
+        print("Thank You....")

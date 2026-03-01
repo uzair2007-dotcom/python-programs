@@ -1,0 +1,11 @@
+print("251A034,17|02|26")
+file=open("example.txt",'r')
+content=file.read().split()
+print(content)
+n=int(input("Enter the lengt you want to search\n"))
+for i in content:
+    if len(i)==n:
+       print(i)
+
+
+file.close()

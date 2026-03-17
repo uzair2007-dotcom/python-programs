@@ -1,0 +1,15 @@
+print("251A034,17|03|26\n")
+import re
+email=input("Enter your email\n")
+p=input("Enter your phone number\n")
+email_pattern=r'^[\w]+@[\w]+\.[\w]+$'
+p_pattern=r'^[6-9]\d{9}$'
+
+if re.fullmatch(email_pattern,email):
+   print("Valid email\n")
+else:
+   print("Please enter a valid email\n")
+if re.fullmatch(p_pattern,p):
+   print("valid phone number")
+else:
+   print("Enter a valid phone number\n")   

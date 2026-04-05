@@ -1,0 +1,42 @@
+print("251A034,1/04/26\n")
+import tkinter as tk
+def convert():
+try:
+value = float(entry.get())
+choice = option.get()
+if choice == "Celsius to Fahrenheit":
+result = (value * 9/5) + 32
+output.config(text="Result: " + str(result) + " °F")
+elif choice == "Rupees to Dollars":
+result = value / 83 # approx rate
+output.config(text="Result: $" + str(round(result,2)))
+elif choice == "Inches to Feet":
+result = value / 12
+output.config(text="Result: " + str(result) + " ft")
+except:
+output.config(text="Enter valid number!")
+# Window
+root = tk.Tk()
+root.title("Unit Converter App")
+root.geometry("350x300")
+# Title
+tk.Label(root, text="Unit Converter", font=("Arial", 16)).pack(pady=10)
+# Input
+tk.Label(root, text="Enter Value").pack()
+entry = tk.Entry(root)
+entry.pack(pady=5)
+# Dropdown menu
+option = tk.StringVar()
+option.set("Celsius to Fahrenheit")
+menu = tk.OptionMenu(root, option,
+"Celsius to Fahrenheit",
+"Rupees to Dollars",
+"Inches to Feet")
+menu.pack(pady=10)
+# Button
+tk.Button(root, text="Convert", command=convert).pack(pady=10)
+# Output
+output = tk.Label(root, text="Result will appear here")
+output.pack(pady=10)
+# Run
+root.mainloop()

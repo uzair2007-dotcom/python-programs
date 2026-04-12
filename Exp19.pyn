@@ -1,26 +1,29 @@
-plt.title("Distribution of Cases")
-plt.show()import pandas as pd
+print("251A034")
+import pandas as pd
 import matplotlib.pyplot as plt
-
+# Load dataset
 df = pd.read_csv("covid_dataset.csv")
-
+# Inspect data
 print(df.head())
 print(df.dtypes)
 print(df.describe())
-
+# Data Cleaning
 df = df.drop_duplicates()
 df['Date'] = pd.to_datetime(df['Date'])
-
+# Aggregation
 summary = df.groupby('Country')[['Confirmed','Recovered','Deaths']].sum()
 print(summary)
-
+# Plotting
+# Line Plot
 india = df[df['Country'] == 'India']
 plt.plot(india['Date'], india['Confirmed'])
 plt.title("India COVID Trend")
 plt.show()
-
+# Bar Plot
 summary.plot(kind='bar')
 plt.title("Country Comparison")
 plt.show()
-
+# Histogram
 plt.hist(df['Confirmed'])
+plt.title("Distribution of Cases")
+plt.show()
